@@ -3,6 +3,7 @@ import NavBarRight from "../Molecules/NavBarRight";
 import NavBarLogo from "../Atoms/NavBarLogo";
 
 const Box = styled.div({
+  height: "15vh",
   position: "fixed",
   display: "flex",
   justifyContent: "space-between",
