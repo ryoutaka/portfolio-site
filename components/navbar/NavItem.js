@@ -2,8 +2,8 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const Box = styled.div({
-  fontSize: "1em",
-  padding: "0.5em",
+  fontSize: "1.5em",
+  padding: "1.5em",
   fontFamily: "'Vollkorn', serif;",
 });
 

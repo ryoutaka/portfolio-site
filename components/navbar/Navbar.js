@@ -1,20 +1,20 @@
 import styled from "styled-components";
-import NavItem from "./NavItem";
+import NavBarRight from "./NavBarRight";
+import NavBarLogo from "./NavBarLogo";
 
 const Box = styled.div({
   position: "fixed",
   display: "flex",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
+  alignItems: "center",
   width: "100%",
 });
 
 const Index = () => {
   return (
     <Box>
-      <NavItem text="BLOG" />
-      <NavItem text="ABOUT" />
-      <NavItem text="SKILS" />
-      <NavItem text="PORTFOLIO" />
+      <NavBarLogo />
+      <NavBarRight />
     </Box>
   );
 };
