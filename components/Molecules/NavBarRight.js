@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import NavItem from "./NavItem";
+import NavItem from "../Atoms/NavItem";
 
 const Container = styled.div({
   display: "flex",
