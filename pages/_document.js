@@ -16,6 +16,8 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <script src="path/to/intersection-observer.js"></script>
+
           <Main />
           <NextScript />
         </body>
