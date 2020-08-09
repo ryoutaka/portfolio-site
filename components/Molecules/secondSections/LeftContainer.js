@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Paragraph from "../../Atoms/Paragraph";
-import * as FadeIn from "../../utils/fadein";
+import * as FadeIn from "../../utils/Fade_in";
 
 const Container = styled.div`
   width: 45%;
