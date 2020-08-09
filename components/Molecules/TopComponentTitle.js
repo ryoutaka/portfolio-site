@@ -1,5 +1,5 @@
 import styled, { keyframes, extend } from "styled-components";
-import TopComponentWord from "../Atoms/TopComponentWord";
+import SectionTitle from "../Atoms/SectionTitle";
 
 const Button = styled.button`
   color: palevioletred;
@@ -19,8 +19,8 @@ const TomatoButton = styled(Button)`
 const Index = () => {
   return (
     <div>
-      <TopComponentWord direction="-20px" text="Hello" size={"5em"} />
-      <TopComponentWord
+      <SectionTitle direction="-20px" text="Hello" size={"5em"} />
+      <SectionTitle
         direction="20px"
         text="Welcome to Ryo's portfolio site"
         size={"4em"}

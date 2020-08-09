@@ -13,17 +13,6 @@ const func = (direction) => {
   `;
 };
 
-const fadein = keyframes`
-0% {
-  opacity: 0;
-  transform: translateY(-20px);
-}
-100% {
-  opacity: 1;
-  transform: translateY(0);
-}
-`;
-
 const H2 = styled.h2`
   text-align: center;
   font-size: ${(props) => (props.size ? props.size : "2em")};
