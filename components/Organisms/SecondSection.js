@@ -2,7 +2,7 @@ import styled from "styled-components";
 import SectionTitleNon from "../Atoms/SectionTitleNon";
 import RightContainer from "../Molecules/secondSections/RightContainer";
 import LeftContainer from "../Molecules/secondSections/LeftContainer";
-import * as FadeIn from "../utils/fadein";
+import * as FadeIn from "../utils/Fade_in";
 
 const Container = styled.div`
   padding-top: 15vh;
