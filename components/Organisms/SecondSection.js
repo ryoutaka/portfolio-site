@@ -24,7 +24,7 @@ const Box = styled.div`
 const Index = () => {
   return (
     <>
-      <Container>
+      <Container id="second">
         <FadeIn.Down>
           <Title>
             <SectionTitleNon text="ABOUT" />

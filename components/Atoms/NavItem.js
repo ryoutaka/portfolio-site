@@ -5,6 +5,7 @@ const Box = styled.div({
   fontSize: "1.5em",
   padding: "1.5em",
   fontFamily: "'Vollkorn', serif;",
+  cursor: "pointer",
 });
 
 const Index = (props) => {
