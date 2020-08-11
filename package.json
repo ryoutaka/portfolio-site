@@ -15,7 +15,10 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-inview-monitor": "^2.3.0",
-    "styled-components": "^5.1.1"
+    "react-media": "^1.10.0",
+    "styled-components": "^5.1.1",
+    "styled-media-query": "^2.1.2",
+    "ua-parser-js": "^0.7.21"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.11.1"

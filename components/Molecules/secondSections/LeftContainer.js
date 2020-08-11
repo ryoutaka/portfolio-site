@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import Paragraph from "../../Atoms/Paragraph";
 import * as FadeIn from "../../utils/Fade_in";
+import media from "styled-media-query";
 
 const Container = styled.div`
   width: 45%;
+  ${media.lessThan("599px")`
+  width:100%;
+  margin-bottom:60px;
+`}
 `;
 
 const Index = () => {

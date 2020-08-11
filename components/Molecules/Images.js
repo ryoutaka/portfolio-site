@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "../Atoms/Image";
 import * as FadeIn from "../utils/Fade_in";
+import media from "styled-media-query";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -8,6 +9,10 @@ const Container = styled.div`
   width: 80%;
   justify-content: space-between;
   align-items: center;
+  ${media.lessThan("599px")`
+  display: block;
+  
+`}
 `;
 
 const Index = (props) => {
