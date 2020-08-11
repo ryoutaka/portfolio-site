@@ -3,15 +3,19 @@ import SectionTitleNon from "../Atoms/SectionTitleNon";
 import RightContainer from "../Molecules/secondSections/RightContainer";
 import LeftContainer from "../Molecules/secondSections/LeftContainer";
 import * as FadeIn from "../utils/Fade_in";
+import media from "styled-media-query";
 
 const Container = styled.div`
   padding-top: 15vh;
   width: 100%;
-  height: 100vh;
 `;
 
 const Title = styled.div`
   margin-bottom: 90px;
+  ${media.lessThan("599px")`
+  margin-bottom: 40px;
+  
+`}
 `;
 const Box = styled.div`
   display: flex;
@@ -19,6 +23,10 @@ const Box = styled.div`
   margin: 0 auto;
   justify-content: space-between;
   aligin-items: center;
+  ${media.lessThan("599px")`
+  display: block;
+  
+`}
 `;
 
 const Index = () => {

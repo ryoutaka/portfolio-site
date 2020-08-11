@@ -1,29 +1,48 @@
-import styled, { keyframes, extend } from "styled-components";
 import SectionTitle from "../Atoms/SectionTitle";
+import Media from "react-media";
 
-const Button = styled.button`
-  color: palevioletred;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-`;
-
-// A new component based on Button, but with some override styles
-const TomatoButton = styled(Button)`
-  color: tomato;
-  border-color: blue;
-`;
-
-const Index = () => {
+const Index = (props) => {
   return (
     <div>
-      <SectionTitle direction="-20px" text="Hello" size={"5em"} />
-      <SectionTitle
-        direction="20px"
-        text="Welcome to Ryo's portfolio site"
-        size={"4em"}
+      <Media
+        queries={{ medium: "(max-width: 599px)" }}
+        defaultMatches={{ medium: props.device === "mobile" }}
+        render={() => (
+          <>
+            <SectionTitle
+              bottom="50px"
+              direction="-20px"
+              text="Hello"
+              size={"3em"}
+            />
+            <SectionTitle
+              line="1.5em"
+              direction="20px"
+              text="Welcome to Ryo's portfolio site"
+              size={"2.2em"}
+            />
+          </>
+        )}
+      />
+
+      <Media
+        queries={{ medium: "(min-width: 600px)" }}
+        defaultMatches={{ medium: props.device === "desktop" }}
+        render={() => (
+          <>
+            <SectionTitle
+              bottom="100px"
+              direction="-20px"
+              text="Hello"
+              size={"5em"}
+            />
+            <SectionTitle
+              direction="20px"
+              text="Welcome to Ryo's portfolio site"
+              size={"4em"}
+            />
+          </>
+        )}
       />
     </div>
   );

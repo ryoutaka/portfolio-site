@@ -10,14 +10,11 @@ const Container = styled.div`
 
 const Index = () => {
   const [flag, setFlag] = useState(true);
-  console.log(flag);
 
   return (
     <Container id="portfolio">
       <SectionTitleNon bottom="60px" text="PORTFOLIO" />
       <Images flag={flag} setFlag={setFlag} />
-
-      {/* {flag ? <Images flag={flag} setFlag={setFlag} /> : "false"} */}
     </Container>
   );
 };

@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import media from "styled-media-query";
 
 const transform = (memori) => {
   return keyframes`
@@ -17,6 +18,10 @@ const transform = (memori) => {
 const Container = styled.div`
   width: 27rem;
   background: #d7d9d8;
+  ${media.lessThan("599px")`
+  width: 17rem;
+  margin-bottom:30px;
+`}
 `;
 
 const Content = styled.div`
@@ -31,6 +36,9 @@ const Text = styled.p`
   font-family: "Vollkorn", serif;
   font-size: 2em;
   margin-bottom: 10px;
+  ${media.lessThan("599px")`
+  font-size: 1.5em;
+`}
 `;
 
 const Index = (props) => {

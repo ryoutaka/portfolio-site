@@ -15,27 +15,27 @@ const Index = () => {
   return (
     <Container>
       <ul>
-        <FadeIn.Right key="20">
+        <FadeIn.Right>
           <Li>
-            <Graph text="javascript" memori="80" />
+            <Graph text="javascript" memori="85" />
           </Li>
         </FadeIn.Right>
 
-        <FadeIn.Right key="18">
+        <FadeIn.Right>
           <Li>
             <Graph text="React/Redux" memori="80" />
           </Li>
         </FadeIn.Right>
 
-        <FadeIn.Right key="15">
+        <FadeIn.Right>
           <Li>
-            <Graph text="Next.js" memori="40" />
+            <Graph text="Next.js" memori="75" />
           </Li>
         </FadeIn.Right>
 
-        <FadeIn.Right key="90">
+        <FadeIn.Right>
           <Li>
-            <Graph text="Node.js/Express.js" memori="20" />
+            <Graph text="Node.js/Express.js" memori="65" />
           </Li>
         </FadeIn.Right>
       </ul>
