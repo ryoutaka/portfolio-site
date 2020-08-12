@@ -7,7 +7,8 @@ const P = styled.p`
   line-height: 1.5em;
   margin-bottom: 18px;
   ${media.lessThan("599px")`
-  font-size: 0.8em;
+  font-size: 1em;
+  line-height: 1.6em;
 `}
 `;
 

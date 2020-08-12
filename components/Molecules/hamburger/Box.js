@@ -1,30 +1,27 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import HamburgerStick from "../../Atoms/hamburger/HamburgerStick";
 import HamburgerBottom from "../../Atoms/hamburger/HamburgerBottom";
 import HamburgerTop from "../../Atoms/hamburger/HamburgerTop";
 
-import { useRef, useState } from "react";
-
 const Container = styled.div`
   width: 50px;
   height: 50px;
+  position: relative;
+  ${(props) => {
+    return props.flag
+      ? css`
+          z-index: 90;
+        `
+      : "";
+  }}
 `;
 
-const Input = styled.input.attrs((props) => ({
-  ref: props.ref,
-  type: "checkbox",
-}))`
-  display: none;
-`;
-
-const Index = () => {
-  const [flag, setFlag] = useState(false);
-
-  const click = () => {
+const Index = ({ flag, setFlag }) => {
+  const changeFlag = () => {
     setFlag(!flag);
   };
   return (
-    <Container onClick={() => click()}>
+    <Container flag={flag} onClick={() => changeFlag()}>
       <HamburgerTop flag={flag} />
 
       <HamburgerStick flag={flag} />

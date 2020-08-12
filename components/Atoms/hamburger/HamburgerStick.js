@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 const Span = styled.span`
   background-color: #474545;
   height: 10px;
-  width: 80px;
+  width: 70px;
   opacity: 0.7;
   margin-bottom: 10px;
   display: inline-block;
