@@ -2,9 +2,9 @@ import styled, { css } from "styled-components";
 
 const Span = styled.span`
   background-color: #474545;
-  opacity:0.7;
+  opacity: 0.7;
   height: 10px;
-  width: 80px;
+  width: 70px;
   margin-bottom: 10px;
   display: inline-block;
   border-radius: 4px;
@@ -12,6 +12,7 @@ const Span = styled.span`
   ${(props) => {
     return props.flag
       ? css`
+          background-color: black;
           -webkit-transform: translateY(-20px) rotate(315deg);
           transform: translateY(-20px) rotate(315deg);
         `

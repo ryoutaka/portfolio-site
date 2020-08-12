@@ -40,8 +40,7 @@ const Index = () => {
       </div>
       <div>
         <FadeIn.Left key="4">
-          {" "}
-          <Paragraph>興味のある方は是非コンタクトください！</Paragraph>
+          <Paragraph>興味のある方は是非ご連絡をお願い致します！</Paragraph>
         </FadeIn.Left>
       </div>
     </Container>
